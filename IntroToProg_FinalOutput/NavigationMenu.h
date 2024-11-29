@@ -2,6 +2,7 @@
 #include <iostream>
 #include <string>
 #include <fstream>
+#include <cstdlib>
 using namespace std;
 
 void navigationMenu() {
@@ -34,7 +35,7 @@ void navigationMenu() {
         case 'X':
         case 'x':
             cout << "Exiting the program.\n";
-            return;
+            exit(0);
         default:
             cout << "Invalid option. Please try again.\n";
         }

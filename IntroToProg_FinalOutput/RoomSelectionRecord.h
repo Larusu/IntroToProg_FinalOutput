@@ -39,6 +39,7 @@ void displayRoom() {
         case 'x':
         case 'X':
             reservationRecordModule();
+            break;
         default:
             cout << "Invalid choice. Try again.\n";
         }

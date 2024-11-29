@@ -34,6 +34,9 @@ void reservationRecordModule() {
     case 'X':
     case 'x':
         navigationMenu();
+        break;
+    default: 
+        cout << "Invalid input. Try again.\n";
     }
 }
 

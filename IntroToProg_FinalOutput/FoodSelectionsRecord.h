@@ -32,20 +32,35 @@ void displayMenu() {
 
         switch (orderChoice) {
         case 'A':
-        case 'a': processOrder(meals, 5, orderedItems, quantities, itemCount); break;
+        case 'a': 
+            processOrder(meals, 5, orderedItems, quantities, itemCount); 
+            break;
         case 'B':
-        case 'b': processOrder(drinks, 5, orderedItems, quantities, itemCount); break;
+        case 'b': 
+            processOrder(drinks, 5, orderedItems, quantities, itemCount); 
+            break;
         case 'C':
-        case 'c': processOrder(desserts, 5, orderedItems, quantities, itemCount); break;
+        case 'c': 
+            processOrder(desserts, 5, orderedItems, quantities, itemCount); 
+            break;
         case 'D':
-        case 'd': processOrder(sidedish, 5, orderedItems, quantities, itemCount); break;
+        case 'd': 
+            processOrder(sidedish, 5, orderedItems, quantities, itemCount); 
+            break;
         case 'E':
-        case 'e': processOrder(bundle, 5, orderedItems, quantities, itemCount); break;
+        case 'e': 
+            processOrder(bundle, 5, orderedItems, quantities, itemCount); 
+            break;
         case 'F':
-        case 'f': saveOrder(orderedItems, quantities, itemCount); break; 
+        case 'f': 
+            saveOrder(orderedItems, quantities, itemCount); 
+            break; 
         case 'x':
-        case 'X': reservationRecordModule();
-        default: cout << "Invalid choice. Try again.\n";
+        case 'X': 
+            reservationRecordModule(); 
+            break;
+        default: 
+            cout << "Invalid choice. Try again.\n";
         }
     } while (orderChoice != 'F');
 }
